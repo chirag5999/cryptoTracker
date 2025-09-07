@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name = "keywords" content="crypto, cryptocurrency, tracker, bitcoin, ethereum, altcoins">
+    <title>Crypto Tracker</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/2c86498118.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class = "left-nav">
+            <h2>CRYPTO TRACKER</h2>
+        </div>
+        <div class = "right-nav">
+            <button><a href="./index.html">Home</a></button>
+            <button><a href="./fav.html">Liked Coins</a></button>
+            <div class = "search-container">
+                <input type="text" class = "search-input" placeholder="Search Coins..." />
+                <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                <div class = "dialog-box">
+                    <div class = "search-title">
+                        <h3>Search Results</h3>
+                        <i class="fa-solid fa-xmark close-icon" style="color: #000000;"></i>
+                    </div>
+                    <div class = "search-content">
+                        <ul>
+                        
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class = "shimmer-container">
+            <div></div>
+        </div>
+        <table border ="1px solid lightgrey" cellpadding = "10px" align="center">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Icon</th>
+                    <th>Name</th>
+                    <th>Price <i class="fa-solid fa-arrow-up sort-asc-price"></i> <i class="fa-solid fa-arrow-down sort-desc-price"></i></th>
+                    <th>Volume <i class="fa-solid fa-arrow-up sort-asc-volume"></i> <i class="fa-solid fa-arrow-down sort-desc-volume"></i></th>
+                    <th>Market Cap <i class="fa-solid fa-arrow-up sort-asc-market"></i> <i class="fa-solid fa-arrow-down sort-desc-market"></i></th>
+                    <th>Favorite</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+            </tbody>
+
+        </table>
+        <h3 class = "no-data">No Data Found</h3>
+        <div class = "pagination">
+            <button class ="prev-btn" disabled>Prev</button>
+            <button class = "next-btn">Next</button>
+        </div>
+        
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
