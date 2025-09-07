@@ -1,70 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta><meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name = "keywords" content="crypto, cryptocurrency, tracker, bitcoin, ethereum, altcoins">
-    <title>Crypto Tracker</title>
-    <link rel="stylesheet" href="coin.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./coin.css" />
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-</head>
-<body>
-        <header>
-        <div class = "left-nav">
-            <h2>CRYPTO TRACKER</h2>
-        </div>
-        <div class = "right-nav">
-            <button><a href="./index.html">Home</a></button>
-            <button><a href="./fav.html">Liked Coins</a></button>
-            <div class = "search-container">
-                <input type="text" placeholder="Search Coins..." />
-                <i class="fa-solid fa-magnifying-glass search-icon"></i>
-                <div class = "dialog-box">
-                    <div class = "search-title">
-                        <h3>Search Results</h3>
-                        <i class="fa-solid fa-xmark" style="color: #000000;"></i>
-                    </div>
-                    <div class = "search-content">
-                        <ul>
-                        
-                        </ul>
-                    </div>
-                </div>
+  </head>
+  <body>
+    <header>
+      <div class="left-nav">
+        <h2>CRYPTO TRACKER</h2>
+      </div>
+      <div class="right-nav">
+        <button><a href="./index.html">Home</a></button>
+        <button><a href="./fav.html">Liked Coins</a></button>
+        <!-- <div class="search-container">
+          <input type="text" placeholder="Search Coins..." />
+          <i class="fa-solid fa-magnifying-glass search-icon"></i>
+          <div class="dialog-box">
+            <div class="search-title">
+              <h3>Search Results</h3>
+              <i class="fa-solid fa-xmark" style="color: #000000"></i>
             </div>
-        </div>
+            <div class="search-content">
+              <ul>
+                <li></li>
+              <li></li>
+              </ul>
+            </div>
+          </div>
+        </div> -->
+      </div>
     </header>
     <main>
-        <div id = "coin-container">
-            <div id = "sidebar">
-                <img src="" alt="coin-img" id = "coin-img"/>
-                <h3 id = "coin-name"></h3>
-                <p id = "coin-desc"></p>
-                <div id = "coin-data">
-                    <div>
-                        <span id = "coin-rank"><strong></strong></span>
-                    </div>
-                    <div>
-                        <span id = "coin-price"><strong></strong></span>
-                    </div>
-                    <div>
-                        <span id = "coin-cap"><strong></strong></span>
-                    </div>
-                </div>
-                <button id = "add-fav-btn"></button>
+      <div id="coin-container">
+        <div id="sidebar">
+          <img id="coin-image" src="" alt="coin-img" />
+          <h3 id="coin-name"></h3>
+          <p id="coin-desc"></p>
+          <div id="coin-data">
+            <div>
+              <span><strong>Rank:</strong></span>
+              <span id="coin-rank"></span>
             </div>
-            <div id = "right-chart">
-                <div id = "btn-container">
-                    <button id = "24h">24h</button>
-                    <button id = "30d">30d</button>
-                    <button id = "90d">3m</button>
-                </div>
-                <canvas id = "coinChart">
-
-                </canvas>
+            <div>
+              <span><strong>Current Price:</strong></span>
+              <span id="coin-price"></span>
             </div>
+            <div>
+              <span><strong> Cap:</strong></span>
+              <span id="coin-cap"></span>
+            </div>
+          </div>
+          <button id="add-fav-btn"></button>
         </div>
-        
+        <div id="coinchart">
+          <div class="btn-container">
+            <button id="24h">24h</button>
+            <button id="30d">30d</button>
+            <button id="90d">3m</button>
+          </div>
+          <canvas id="coinChart"></canvas>
+        </div>
+      </div>
+
+      <!-- <div class="shimmer-container">
+        <div></div>
+      </div> -->
     </main>
-    <script src="/coin.js"></script>
-</body>
+    <script src="./coin.js"></script>
+  </body>
 </html>
